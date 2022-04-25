@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yuehan Wang">
+
+
+
+
+
+<title>高中的流水账 | Yuehan&#39;s Space</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Yuehan&#39;s Space</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/index">Home</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Yuehan&#39;s Space</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/index">Home</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">高中的流水账</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/summary/">summary</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>空有姑苏台上月，如西子镜，照江城。</p>
+</blockquote>
+<h1 id="前缘"><a href="#前缘" class="headerlink" title="前缘"></a>前缘</h1><p>我一直觉得，"命运无常"是中老年人才能够使用的感叹。然而回望我的求学经历，又实在找不到比
+"半点不由人"更恰当的评价。<br>
+实际上，我在五年级的时候就听闻过世界联合书院(UWC)的大名了，彼时它在中国大陆地区的分校都还没开始修建，方才完成选址。它并没在我心里留下任何深刻印象。<br>
+"江苏，上个高中跑那么远做什么？"我只记得我和我的父母都这样认为，同时抱着对一切<em>"国际学校"</em>朴素的鄙视。<br>
+我们怎么也想不到，它将会再次出现在我的生活里，把我推向一条未曾考虑过的道路。</p>
+
+<p>直到四年后，<del>Lara</del> <del>Lauren</del> <del>Lora</del>郑同学某日突然告诉我，她正在申请UWC，这个名字才从我记忆的旮旯里抬起头。
+此后几个月里，我看着她一路写文书，要推荐信，去常熟参加选拔日，但绝没意料到她真的会去----以至于当她在班级里宣布这个消息时，我心里都非常震惊。<br>
+
+<blockquote>
+<p>我多羡慕她啊，曾经相似的人，还是会渐行渐远的。她将在一条我没有机会的赛道上寻找未来了。而我还得苦哈哈地搞中高考。 ———— &lt;摘自 2017&#x2F;04&#x2F;10 日记&gt;</p>
+</blockquote>
+<p>令人感慨的是，站在讲台上介绍学校的她最终并没有去。反倒是坐在台下的我在两年后重复了这个过程，走进了她口中这个地方。<br></p>
+<h1 id="高一"><a href="#高一" class="headerlink" title="高一"></a>高一</h1><p>这一部分实在乏善可陈，毕竟一半的时间我在申请UWC，一半的时间我在录取后咸鱼。怎么我会莫名做出这个选择呢？老实说，并非是什么"对未来有自己的规划"，绝大部分都仅仅因为我当时过得不开心。所以后来每当有人称赞我这种逃避行为"勇敢"时，我都十分羞愧。至于不开心的理由，向来心胸狭隘的我可以在这里连篇累牍地整一篇八百字檄文，但我认识到了这不是应该骄傲的品质，因此便不展开了。<br>
+<p>值得一提的是高一下期末的时间正好是世界杯，我无视班主任警告，夜夜看球，天天在班里总结战况，展望未来。以至于班主任终于忍无可忍，把干扰他人复习的我大骂一顿。如今想想，那时的我真是又自私又幼稚，很感谢同学们都是有素质的人，没有把整日大放厥词的我大卸八块。
+<p>总之，这一年很快就过去了。暑假期间我一度因为担心自己的洋文水平应付不了UWC的学业和生活，硬是要去找个外教上课。开学后才发现真是没这个必要，语言环境是很好适应的。这些时间和金钱还不如拿来旅游。</p>
+
+<h1 id="高二-DP1"><a href="#高二-DP1" class="headerlink" title="高二 | DP1"></a>高二 | DP1</h1><p>常熟UWC的IB Program有三年，其中第一年是Pre IB，后面两年是IB DP，前者顾名思义是后者的预备课程，大部分同学也是按顺序这样读三年的。由于我在体制内读了高一，便直接进入了DP。刚入学时我还很焦虑，想着我的peers岂不是都比我领先，后来才了解到大家Pre IB的时候似乎也没干什么正事儿。如释重负。</p>
+<p>但这样的焦虑感却是从此粘连上了我，只是焦虑的对象不尽相同而已。兴许中产家庭的留学生，但凡有点追求，都很难不焦虑。</p>
+<p>DP1部分我准备主要写写我的IB选课和(校内的)课外活动；DP2部分则简单讲讲我的申请季，以及所谓<em>UWC Experience</em>。没打草稿，就想到哪儿写到哪儿吧。</p>
+
+<h3 id="Standard-Level-Economics"><a href="#Standard-Level-Economics" class="headerlink" title="Standard Level - Economics"></a>Standard Level - Economics</h3><p>了解我的人看到这个课程第一个出现大概会露出滑稽的笑容。Econ确实是我最喜欢的一门课，有Econ课的一天就是幸福的一天。</p>
+<p>我充分认识到了一个好老师对学生能够产生多么巨大的影响。我也没什么好遮掩的：Suvash真是帅得令我窒息。犹记DP1上期都快结束了，我们区区10个同学的班级里我竟然还有人认不出脸----因为我上课一直坐在第一排，眼神一刻也没有离开过他。</p>
+<p>好老师除了使我上课全神贯注外，还起到了促进我自主学习的作用。为了让Suvash相信我可真是个不可多得的优质学生，每次上课前我都会先去YouTube上把今天的内容学一遍，查一下相关新闻，再准备两个<em>恰到好处</em>的问题----不能太简单，以防他觉得我愚蠢；不能太复杂，不然我的预习就暴露了。此外，我的睡前读物/娱乐观影也逐渐Econ化，我读了<em>Animal Spirits</em>, <em>Poor Economics</em>以及<em>Freakonomics</em>，看了大而不倒，大空头，入侵华尔街等一系列电影。我还跑去coursera上了套game theory。不过这些东西哪怕是从非花痴非功利的角度我也是很推荐大家都去看看的。</p>
+<p>总之，这些课内学习与课外拓展，加上我去了几乎所有Office Hour，让我在整个DP生涯中所有Econ考试基本都是卷面满分，而且学习过程一点也不觉得劳累。Economics也是我第一节正儿八经的文科课，在我后期选校，以及申请的时候，都起到了很大的作用，为我的package增加了一点touch of humanity</p>
+<p>当然，彼时彼刻我满脑子都是怎么才能impress我的老师，并没有考虑那么多。</p>
+
+<h3 id="Standard-Level-English-A-Language-and-Literature"><a href="#Standard-Level-English-A-Language-and-Literature" class="headerlink" title="Standard Level - English A Language and Literature"></a>Standard Level - English A Language and Literature</h3><p>我在入学前是根本没有计划选择这门课的。我当时认为既然Language A的课程都是为了母语者设计，我自然而然地应该学中文A和英文B。但是因为排课的原因，我只好选了它。不得不说，实乃因祸得福。</p>
+<p>首先，我运气很好，分到的Micheal是个全校公认的好老师。我第一次上课前给他发过一封几句话的邮件，大意是我害怕我洋文不够好适应不了这节课，应该怎么去提高呢？没想到当晚就收到了他大作文一样的回复，洋洋洒洒地给了我很多建议。</p>
+<p>不仅如此，我现在发现实际上相比于English B HL，English A Lan&Lit SL是更值得去学的。我在这节课里学到的写essay的方法，分析文章的技术在后来SAT考试，乃至进入大学后的诸多需要写essay的课程里都有很大的帮助。我们读的<em>Anne Allen</em>也是我第一次尝试着欣赏现代诗，很多句子我至今仍然记得：
+
+<blockquote>
+<p>You need the untranslatable ice to watch,<br>You need to loiter a little among the vague,<br>Hushes, the clever evasions of the vagueness.<br>You need the untranslatable ice to watch,<br>The purple and black to smell.</p>
+</blockquote>
+</p>
+<p>对我而言更重要的是它的名字放在transcript上比English B更好看，而且更容易拿分。这有两个原因：首先，"语言"之于Language A来讲并没有其之于Language B那么重要，因为前者重点在于考察学生对文本信息的理解，而后者在于对语言本身的掌握情况。所以在前者的assessment里，只要你的大意是准确的，哪怕表达方式有错误，都只会扣很少的分。<br>
+第二点则在于IB的打分方式是按照全球考生的排名来制定grade boundary的。学习English B HL中有大量中国大陆/香港考生，非常厉害，老师们的教学水平也很精湛，使得boundary逐年水涨船高。而反观English A，由于一众来自某宇宙灯塔的----这是可以说的吗----simple minds的贡献，boundary一直都不是很高。</p>
+<p>所以，每当学弟学妹问我选课相关的问题时----只要他们别连English B SL水平都没有----我都会推荐他们去念English A Lan&Lit SL。</p>
+
+<h3 id="Standard-Level-Chinese-A-Language-and-Literature"><a href="#Standard-Level-Chinese-A-Language-and-Literature" class="headerlink" title="Standard Level - Chinese A Language and Literature"></a>Standard Level - Chinese A Language and Literature</h3><p>我从初三开始非常喜欢白先勇的作品，他的每本小说我都读过。在我第一次读到《游园惊梦》里的意识流片段时都愣住了：醉的，过去的，零散的，醒来，像是透过一扇摇摇欲坠的碎玻璃看花。所以在发现我校中文语言与文学选择了白先勇的《台北人》作为两个文学读本之一时，我特别的欣喜。于是在完成Written Task时我选择了对其中一篇文章进行<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1Y9Py9zQaDSc0yUHN60yXlte8yQUZT-NN/view?usp=sharing">模仿</a>，虽然笔触很稚嫩，但写作过程中我是很享受的。Lulu老师夸我很会写夫妻吵架。</p>
+<p>再者，同时选择两个lan&lit课程为我节省了很多时间。二者除了语言和选择的文本不同以外，其他的打分criteria一模一样。然而由于我先前讲过的boundary的划定标准，我English A时常拿的分比Chinese A还要高，即使小分比后者低。</p>
+
+<h3 id="Higher-Level-Mathematics"><a href="#Higher-Level-Mathematics" class="headerlink" title="Higher Level - Mathematics"></a>Higher Level - Mathematics</h3><p>现在的划分已经不一样了，Math不再有HL SL，IBO给加了几个乱七八糟名字，我到现在都没搞明白。</p>
+<p>这门课真是没什么好说的，本身内容也很简单，加上老师水平着急，锻炼了我的自学能力，增强了我的自信心。</p>
+<p>只能说我进入大学时的数学水平与高一结束的自己后比都相形见绌。唉。</p>
+
+<h3 id="Higher-Level-Physics"><a href="#Higher-Level-Physics" class="headerlink" title="Higher Level - Physics"></a>Higher Level - Physics</h3><p>Jaime真是小天使！我每次和他说话总能想起海绵宝宝。</p>
+<p>我的Extended Essay Subject就是Physics，为什么呢？因为我在proposal截止的前一天读了一晚上的《群星我的归宿》，导致Physics在我心中蒙上了一层梦幻浪漫的色彩----可惜我怀揣着星辰大海的动机，最后写出来的EE Title是"How does the concentration of surfactant affect the strength of liquid’s surface tension?"，也就是往水面扔大头钉。</p>
+<p>Sefika是我的supervisor，虽然很多人对她的业务水平颇有微词，但不可否认的是她人还是很好的。DP1结束放假前我赶着把EE实验做完了，开学新生orientation week时收到Sefika的邮件，问她的advisee们是不是已经准备好把first draft给她看了----我面对着写了200词的EE陷入沉思----于是整个orientation我啥也没干，终于憋出了4000词。谁知道见她后发现别的advisee都没写，才意识到她说的是outline的first draft。不过好在这么赶鸭子上架地整完了EE让我DP2不太需要去在它上面浪费时间，毕竟美本申请EE并不重要，别拿F就行。</p>
+<p>不过面试的时候聊一下EE挺合适的，尤其是对于选了science作为EE Subject的同学。学会polish自己的作品也是很重要的技能。譬如虽然我做的是往水面扔图钉这种trivial的事，我在interview里对它的描述却可以是<em>"I investigate micro molecular interactions using macro level approach"</em>。毕竟百分之九十以上的概率你的面试官自己并不太懂物理/化学/.etc。</p>
+
+<h3 id="Higher-Level-Chemistry"><a href="#Higher-Level-Chemistry" class="headerlink" title="Higher Level - Chemistry"></a>Higher Level - Chemistry</h3><p>Peter也是小天使！</p>
+<p>我一直觉得和Peter聊天很有意思，他有种laid-back，调皮又呆萌的幽默感。有些同学上他的课常常昏昏欲睡，但我个人觉得他讲得其实还不错，notes也整理得很好。</p>
+<p>呐，也没什么别的好说的。不过facility follies时我还和chem department的老师同学一起跳了舞，当时为了赶着回去排练还从自行车上摔飞了出去。想想还是挺好玩的。</p>
+
+<h3 id="CAS-校内课外活动"><a href="#CAS-校内课外活动" class="headerlink" title="CAS 校内课外活动"></a>CAS 校内课外活动</h3><ul>
+<li>Varsity - Badminton: 那毕竟Suvash男神是Supervisor。为了进tryout我连着一个星期每天打6个小时羽毛球。一度四肢酸痛到早上下不来床，只能滚下去再靠别人扶起来。</li>
+<li>Creativity - Chinese Dance：因为我差一个Creativity，而Renee正好是Chinese Dance的Student Leader，于是我快乐地进去划了一学期水。</li>
+<li>Activity - Climbing：那毕竟Suvash男神是Supervisor。</li>
+<li>Activity - Sailing：<del>听说学校请的教练团队很贵所以我必须得去白嫖！</del>昆承湖是真漂亮，为了利用好它怎么能不参加一些水上活动呢？</li>
+<li>Service - Biochemistry：为了申请大学。</li>
+<li>Service - ULab：为了申请大学。</li>
+</ul>
+<p>#高三｜DP2</p>
+<p>鸽鸽鸽</p>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/life/"># life</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/random/%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%81/">大家好！</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Yuehan Wang | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
