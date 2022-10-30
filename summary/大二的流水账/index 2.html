@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yuehan Wang">
+
+
+
+
+
+<title>大二的流水账 | Yuehan&#39;s Space</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Yuehan&#39;s Space</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/index">Home</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Yuehan&#39;s Space</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/index">Home</a>
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">大二的流水账</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/summary/">summary</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>因循苟且，逸豫而无为，可以侥幸一时，而不可以旷日持久。</p>
+</blockquote>
+<p>为什么大一还没写大二就出来了呢？因为我实在把大一干了啥忘得差不多了，索性在大二的记忆模糊之前抓紧记录一下。 </p>
+<p>可见，用没用心是一目了然的。碌碌无为的日子很快就会blend into one another。</p>
+
+<h1 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h1><h3 id="Analysis-in-Rn-I-II-III"><a href="#Analysis-in-Rn-I-II-III" class="headerlink" title="Analysis in Rn (I - II - III)"></a>Analysis in Rn (I - II - III)</h3><p> 前两个quarter把baby rudin拉了一遍，最后一个quarter前一半用的是陶哲轩的实分析，后一半似乎没什么章法，不知道用得哪本书。 
+第一个quarter整体体验贼好，Alex Eskin不愧是大佬。我很感激能够在入门的这个阶段遇上一个很好的老师，为analysis这个领域在我心里奠定了“有意思”的第一印象。
+几乎每一节课我都是完全听懂了的---根据后来我上的某些专业课这点很不容易。</p>
+<p> Eskin是个很随性的人，从他从来不换的全灰hobo同款连帽衫运动裤同款就能看出来。
+他有时上课会突然停顿，若有所思，看着黑板比比画画嘟嘟囔囔，然后不好意思地对我们说，“我都讲了些啥”。他几乎每隔两节课就会“承认错误”，譬如“这个定理每次我都推不清楚”或者“这肯定是我又算错了”----
+实际上他几乎没有真正错过，大概人优秀到一定地步就不会觉得过于谦逊会影响自己在他人心中的地位。</p>
+
+<h3 id="Abstract-Linear-Algebra"><a href="#Abstract-Linear-Algebra" class="headerlink" title="Abstract Linear Algebra"></a>Abstract Linear Algebra</h3><p> 数学系学生需要上的线性代数入门课，计算比我想象的多一些，以及一大部分是证明，和细碎的概念区分(这种题每次考试都能放我很多血)。Lanier教授很有意思(Lanier教授教Linear Algebra本身也很有意思)，他本科毕业后先去纽约的一所高中教了十年，期间做了诸多数学教学相关的
+服务和研究，终于发现教高中满足不了对数学的热爱，又去读了个PhD，再来我校任教。我觉得这样的人生进程很激励人，即使是最为艰苦的学术研究道路，也不应该“为时已晚”一说。</p>
+
+<h3 id="Desecrate-Mathematicss"><a href="#Desecrate-Mathematicss" class="headerlink" title="Desecrate Mathematicss"></a>Desecrate Mathematicss</h3><p> 最开始本来上的是Honor版本，但是上了两节课就上不下去，swap到regular了。也不能说完全是我自己的问题吧，首先教Honor版本的前苏联教授的英文令我这个ESL(English as a Second Language)学子叹为观止----他哪里在说带俄罗斯口音的英语，分明就是带美国口音的俄语。
+再者这节课本身内容涵盖了许多algebra的内容，我都没有接触过。于是这门课大部分我听不懂教授，小部分我听得懂教授的部分，我也听不懂。</p>
+<p> 如果说Honor让我发现我是个愚笨的人的话，转入正常的Desecrate Math后我发现这可真是一门愚笨的课。我觉得我校非常需要开一门难度介于二者中间课程版本。</p>
+
+<h3 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h3><p> 怀揣着上完这节课我就可以在leetcode横着走的美好幻想，我一无所获地写了一个quarter的pseudo code。</p>
+<p> 当然，也不能说是完全没有收获，对有些先前没听说过的算法和数据结构有了大概的了解。这门课也让我见识了计算机学科的证明可以繁杂到何种程度：一道三行代码可解的题目在作业/考试中至少得写上个两页论证。
+权当是为日后给项目写doc作准备了。</p>
+
+<h3 id="Statistical-Models-and-Methods"><a href="#Statistical-Models-and-Methods" class="headerlink" title="Statistical Models and Methods"></a>Statistical Models and Methods</h3><p> 学了些基础的distribution，a/b testing，和regression----基本是ds面试会考的那些东西。同时这个教授非常执着于让我们也学会熟练使用R，以至于常常10道题的作业50个小问，40个小问用R。谁能想到我一个计算机系的学子整个大二真正写代码的地方是一门统计课呢？</p>
+<p> 因为是winter quarter的课，天气很冷，同时covid也很厉害，教授给了in person/zoom两个选择。考虑到我如果zoom上课时常打瞌睡，我每次都会去线下。然而我忽略了我去线下也时常打瞌睡，于是给教授的观感就是有个学生每节课不畏严寒风雨无阻地跑到教室里去打瞌睡。</p>
+<p>最后，不得不说学校Stats系实在太卷了，每次作业/quiz满分+期中avg上20分+期末avg上10分最后给个A-也挺离谱。</p>
+
+<h3 id="Landscape-Representation-in-Dynastic-China"><a href="#Landscape-Representation-in-Dynastic-China" class="headerlink" title="Landscape Representation in Dynastic China"></a>Landscape Representation in Dynastic China</h3><p> 相比于别的art，workload意想不到的重。好像又学了个classics一样。每周基本是读reading，写反思小作文，上课教授把一些名家作品拉一遍，期中期末各一篇赏析论文。由于反思小作文占了期末总成绩很大一部分，教授也确实
+批改得很认真，于是大家(至少我)就卷起来了。从400词一篇的规定逐渐翻倍再翻倍。</p>
+<p> 一般来说，art课如果上得很累很多时候说明老师很重视自己教的课，虽然这对于学生来讲不算是个太好的消息，毕竟对于这个类型的课而言，walking away fruitfully with a C是远没有getting nothing but an A有价值的。期末作业是要求写着除非有合情合理的理由否则晚交零分。
+期末周前我和老师office hour时问“我太笨了一时半会儿写不出来”算不算合情合理的理由呢？教授震惊地表示那必然不行；但最后还是要到了一天extension，由于我在考完所有考试距离due就只有24个小时了，只好与老师说这样下去a medical emergency may not have happened but could be foreseen----不知教授看见这封恬不知耻地邮件作何感想。</p>
+
+<h3 id="鸽鸽鸽"><a href="#鸽鸽鸽" class="headerlink" title="鸽鸽鸽"></a>鸽鸽鸽</h3>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/life/"># life</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/random/%E5%A4%A7%E5%AE%B6%E5%A5%BD%EF%BC%81/">大家好！</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Yuehan Wang | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
