@@ -10,4 +10,4 @@ Plain DCA buys the same amount every time, whether the market is crashing or in 
 
 The first version cut buying too early in strong uptrends, like Nvidia in 2023. Version 2 fixes that with the Elder Impulse System: as long as momentum is still green, it keeps buying even when RSI says overbought.
 
-[Read the full methodology and results](/post/smart_dca/)
+[Try the app](https://yuehan-wang-smart-dca-app-cujodf.streamlit.app/) · [Read the full methodology and results](/post/smart_dca/)
