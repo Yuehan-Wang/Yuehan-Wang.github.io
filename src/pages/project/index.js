@@ -33,7 +33,7 @@ export default function ProjectsPage({ projects }) {
       <div className={styles.projectsPage}>
         {projects.map((project) => (
           <div key={project.id} className={styles.projectCard}>
-            <Link href={`/project/${project.id}`}>
+            <Link href={`/project/${project.id}`} className={styles.cardLink}>
 
                 <h2>{project.title}</h2>
                 <div className={styles.imgContainer}>
