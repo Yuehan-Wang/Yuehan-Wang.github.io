@@ -3,6 +3,16 @@ import getGLContext from './get-gl-context'
 
 import shaders from './shaders'
 
+// Fully saturated colour from a hue in [0, 1). One channel is always 0, so even heavily
+// accumulated dye stays a colour instead of piling up into white.
+function hueToRgb(h, intensity) {
+  const k = (n) => (n + h * 6) % 6
+  const f = (n) => 1 - Math.max(0, Math.min(k(n), 4 - k(n), 1))
+  return [f(5) * intensity, f(3) * intensity, f(1) * intensity]
+}
+
+const POINTER_INTENSITY = 0.8 // _splat scales by 0.3 on top of this
+
 export const defaultConfig = {
   textureDownsample: 1,
   densityDissipation: 0.98,
@@ -108,20 +118,14 @@ export default class FluidAnimation {
     this._pointers[0].dy = (e.offsetY - this._pointers[0].y) * 10.0
     this._pointers[0].x = e.offsetX
     this._pointers[0].y = e.offsetY
-    this._pointers[0].color = [
-      Math.random(),
-      Math.random(),
-      Math.random(),
-    ]
+    this._hue = ((this._hue ?? Math.random()) + 0.002) % 1
+    this._pointers[0].color = hueToRgb(this._hue, POINTER_INTENSITY)
   }
 
   onMouseDown = (e) => {
     this._pointers[0].down = true
-    this._pointers[0].color = [
-      Math.random()+ 0.2,
-      Math.random()+ 0.2,
-      Math.random()+ 0.2
-    ]
+    this._hue = Math.random()
+    this._pointers[0].color = hueToRgb(this._hue, POINTER_INTENSITY)
   }
 
 
@@ -133,11 +137,7 @@ export default class FluidAnimation {
   onTouchStart = (e) => {
     for (let i = 0; i < e.touches.length; ++i) {
       this._pointers[i].down = true
-      this._pointers[i].color = [
-        Math.random() + 0.2,
-        Math.random() + 0.2,
-        Math.random() + 0.2
-      ]
+      this._pointers[i].color = hueToRgb(Math.random(), POINTER_INTENSITY)
     }
   }
 
