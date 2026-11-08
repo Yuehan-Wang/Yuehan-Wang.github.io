@@ -17,8 +17,6 @@ npm run dev
 Push to `master`. `.github/workflows/deploy.yml` builds the static export (`out/`) and deploys it with
 GitHub Pages (Settings → Pages → Source: GitHub Actions). You can also run it by hand from the Actions tab.
 
-The previous site lives on, archived, in [`old-homepage`](https://github.com/Yuehan-Wang/old-homepage).
-
 ## Custom domain
 
 To serve the site from a domain you own (e.g. `yuehan.space` again after re-registering):
