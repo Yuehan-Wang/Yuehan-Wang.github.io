@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#0e1410"/>
+  <text x="80" y="140" fill="#e8efe9" font-family="Georgia,'Times New Roman',serif" font-size="96" font-weight="700">Smart DCA</text>
+  <text x="84" y="196" fill="#8fa598" font-family="Menlo,Consolas,monospace" font-size="26" letter-spacing="3">BUY MORE ON SALE · LESS WHEN HOT</text>
+  <!-- price line; circle size = monthly buy multiplier (2.0x in dips, 0.6x when overbought) -->
+  <polyline fill="none" stroke="#5c6f63" stroke-width="4" stroke-linejoin="round"
+    points="80,430 180,400 280,450 380,540 480,580 580,520 680,470 780,390 880,330 980,290 1080,310 1140,280"/>
+  <g fill="#7fd6a1" fill-opacity="0.85">
+    <circle cx="180" cy="400" r="12"/>
+    <circle cx="280" cy="450" r="16"/>
+    <circle cx="380" cy="540" r="26"/>
+    <circle cx="480" cy="580" r="30"/>
+    <circle cx="580" cy="520" r="24"/>
+    <circle cx="680" cy="470" r="16"/>
+    <circle cx="780" cy="390" r="14"/>
+    <circle cx="880" cy="330" r="13"/>
+    <circle cx="980" cy="290" r="9"/>
+    <circle cx="1080" cy="310" r="10"/>
+  </g>
+  <g font-family="Menlo,Consolas,monospace" font-size="22" fill="#8fa598">
+    <text x="440" y="640">2.0x</text>
+    <text x="955" y="250">0.6x</text>
+  </g>
+</svg>

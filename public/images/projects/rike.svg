@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#11151c"/>
+  <text x="96" y="300" fill="#e5e9f0" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',serif" font-size="190" font-weight="700" letter-spacing="12">日课</text>
+  <text x="102" y="372" fill="#98a2b3" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="30" letter-spacing="6">AGENTS · SECURITY · DATA</text>
+  <!-- three tracks of the course map: filled = mastered, ring = open, faint = locked -->
+  <g font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="24" font-weight="600">
+    <text x="102" y="478" fill="#4cc3b5">A</text>
+    <text x="102" y="538" fill="#ff8a5c">B</text>
+    <text x="102" y="598" fill="#a99bff">C</text>
+  </g>
+  <g>
+    <circle cx="160" cy="470" r="11" fill="#4cc3b5"/>
+    <circle cx="200" cy="470" r="11" fill="none" stroke="#4cc3b5" stroke-width="3"/>
+    <circle cx="240" cy="470" r="11" fill="none" stroke="#4cc3b5" stroke-width="3"/>
+    <circle cx="280" cy="470" r="11" fill="#2a3340"/><circle cx="320" cy="470" r="11" fill="#2a3340"/><circle cx="360" cy="470" r="11" fill="#2a3340"/>
+    <circle cx="400" cy="470" r="11" fill="#2a3340"/><circle cx="440" cy="470" r="11" fill="#2a3340"/><circle cx="480" cy="470" r="11" fill="#2a3340"/>
+    <circle cx="160" cy="530" r="11" fill="none" stroke="#ff8a5c" stroke-width="3"/>
+    <circle cx="200" cy="530" r="11" fill="#2a3340"/><circle cx="240" cy="530" r="11" fill="#2a3340"/><circle cx="280" cy="530" r="11" fill="#2a3340"/>
+    <circle cx="320" cy="530" r="11" fill="#2a3340"/><circle cx="360" cy="530" r="11" fill="#2a3340"/><circle cx="400" cy="530" r="11" fill="#2a3340"/>
+    <circle cx="160" cy="590" r="11" fill="none" stroke="#a99bff" stroke-width="3"/>
+    <circle cx="200" cy="590" r="11" fill="none" stroke="#a99bff" stroke-width="3"/>
+    <circle cx="240" cy="590" r="11" fill="#2a3340"/><circle cx="280" cy="590" r="11" fill="#2a3340"/><circle cx="320" cy="590" r="11" fill="#2a3340"/>
+    <circle cx="360" cy="590" r="11" fill="#2a3340"/><circle cx="400" cy="590" r="11" fill="#2a3340"/><circle cx="440" cy="590" r="11" fill="#2a3340"/>
+    <circle cx="480" cy="590" r="11" fill="#2a3340"/><circle cx="520" cy="590" r="11" fill="#2a3340"/><circle cx="560" cy="590" r="11" fill="#2a3340"/>
+  </g>
+</svg>
