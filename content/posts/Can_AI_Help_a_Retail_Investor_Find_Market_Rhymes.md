@@ -22,4 +22,6 @@ Matching the shape of a price line isn't enough. A $5 move is a breakout for a c
 
 A pattern also depends on the economy around it. A breakout when rates are near zero isn't the same as one during a credit crunch. So before the engine accepts a historical match, it checks the 10-year Treasury yield and the VIX on that date. If either was very different from today, the match is thrown out, however good the chart looks.
 
-## To be continued
+## Update
+
+I finally tested it properly. The short version: no rhyme on direction, some on volatility. [Part 2](/post/markets_rhyme_on_bumpiness/).
