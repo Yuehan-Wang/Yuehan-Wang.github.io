@@ -1,23 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import raf from 'raf'
-import sizeMe from 'react-sizeme'
 
 import FluidAnimation, { defaultConfig } from './fluid-animation'
 
 class ReactFluidAnimation extends Component {
-  static propTypes = {
-    content: PropTypes.string,
-    config: PropTypes.object,
-    style: PropTypes.object,
-    animationRef: PropTypes.func,
-    size: PropTypes.shape({
-      width: PropTypes.number,
-      height: PropTypes.number
-    })
-  }
-
   static defaultProps = {
     config: defaultConfig,
     style: { }
@@ -43,7 +28,7 @@ class ReactFluidAnimation extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this._onResize)
     if (this._tickRaf) {
-      raf.cancel(this._tickRaf)
+      cancelAnimationFrame(this._tickRaf)
       this._tickRaf = null
     }
   }
@@ -54,7 +39,6 @@ class ReactFluidAnimation extends Component {
       config,
       animationRef,
       style,
-      size,
       ...rest
     } = this.props
 
@@ -135,7 +119,7 @@ class ReactFluidAnimation extends Component {
       this._animation.update()
     }
 
-    this._tickRaf = raf(this._tick)
+    this._tickRaf = requestAnimationFrame(this._tick)
   }
 
   _reset(props) {
@@ -160,5 +144,6 @@ class ReactFluidAnimation extends Component {
   }
 }
 
-export default sizeMe({ monitorWidth: true, monitorHeight: true, noPlaceholder: true })(ReactFluidAnimation)
+// Sizing is handled by the window resize listener; react-sizeme relied on findDOMNode, which React 19 removed.
+export default ReactFluidAnimation
 
