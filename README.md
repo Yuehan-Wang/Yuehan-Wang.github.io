@@ -1,6 +1,8 @@
-# yuehan.space
+# Yuehan-Wang.github.io
 
-Personal site — Next.js 16, Tailwind 4, React 19. Static-exported and deployed to GitHub Pages.
+Source for my personal site (formerly the `yuehan-space` repo), live at **https://yuehan-wang.github.io/**.
+
+Built with Next.js 16, React 19 and Tailwind 4, statically exported and hosted on GitHub Pages.
 
 ## Local dev
 
@@ -12,19 +14,21 @@ npm run dev
 
 ## Deploy
 
-Push to `master` — `.github/workflows/deploy.yml` builds the static export and publishes to GitHub Pages.
+Push to `master`. `.github/workflows/deploy.yml` builds the static export (`out/`) and deploys it with
+GitHub Pages (Settings → Pages → Source: GitHub Actions). You can also run it by hand from the Actions tab.
 
-Live at: **https://yuehan-wang.github.io/yuehan-space/**
+The previous site lives on, archived, in [`old-homepage`](https://github.com/Yuehan-Wang/old-homepage).
 
 ## Custom domain
 
-If you want to serve this from a domain you own (e.g. `yuehan.space` again after re-registering):
+To serve the site from a domain you own (e.g. `yuehan.space` again after re-registering):
 
-1. Create `public/CNAME` containing just your domain (one line).
-2. In `.github/workflows/deploy.yml`, change `NEXT_PUBLIC_BASE_PATH: /yuehan-space` to `NEXT_PUBLIC_BASE_PATH: ""` (assets served from root, not `/yuehan-space/`).
-3. Point the domain's DNS to GitHub Pages per [GitHub's docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+1. Create `public/CNAME` containing just the domain (one line).
+2. Point the domain's DNS at GitHub Pages per [GitHub's docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
+The site is already built for the domain root, so no base-path change is needed.
 
 ## Content
 
-- `content/posts/` — markdown blog posts, rendered via `remark` on `/post/[id]`.
-- `content/projects/` — markdown project pages, rendered via `marked` on `/project/[id]`.
+- `content/posts/`: markdown blog posts, rendered with `remark` at `/post/[id]`.
+- `content/projects/`: markdown project pages, rendered with `marked` at `/project/[id]`.

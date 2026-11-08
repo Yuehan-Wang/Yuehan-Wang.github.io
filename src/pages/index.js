@@ -8,9 +8,6 @@ export default function Home() {
   const [typing, setTyping] = useState("");
 
   useEffect(() => {
-    setTyping("");
-    console.log("iconContainer styles:", styles.iconContainer);
-
     const text =
       "Hiiiii there! Welcome to my little corner on the internet! \n 你好，欢迎光临我的主页！";
     let i = -1;
