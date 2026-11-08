@@ -56,7 +56,7 @@ export default function Home() {
           <FaLinkedin size="30" />
         </a>
         <a
-          href="mailto:yuehan@uchicago.edu"
+          href="mailto:yuehanwang886@gmail.com"
           className={styles.iconLink}>
           <FaEnvelope size="30" />
         </a>

@@ -1,57 +1,46 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
-import remarkGfm from 'remark-gfm';
-import styles from '../../styles/markdown.module.css'
+import Head from 'next/head';
+import { markdownToHtml, isChinese } from '@/lib/markdown';
+import styles from '../../styles/article.module.css';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
 export default function Post({ postData }) {
-   if (!postData) {
-      return <div>Loading...</div>;
-    }
   return (
-    <div>
-      <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
+    <article className={styles.article} lang={postData.lang}>
+      <Head>
+        <title>{`${postData.title} · Yuehan Wang`}</title>
+      </Head>
+      {postData.date && <p className={styles.meta}>{postData.date}</p>}
+      <div className={styles.body} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+    </article>
   );
 }
 
 export async function getStaticPaths() {
   const filenames = fs.readdirSync(postsDirectory);
-  const paths = filenames.map((filename) => {
-    return {
-      params: {
-        id: filename.replace(/\.md$/, ''),
-      },
-    };
-  });
+  const paths = filenames.map((filename) => ({
+    params: { id: filename.replace(/\.md$/, '') },
+  }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
+  const filePath = path.join(postsDirectory, `${params.id}.md`);
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const { data, content } = matter(fileContents);
 
-    const filePath = path.join(postsDirectory, `${params.id}.md`);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-  
-
-    const matterResult = matter(fileContents);
-    const processedContent = await remark().use(remarkGfm).use(html).process(matterResult.content);
-    const contentHtml = processedContent.toString();
-  
-
-    return {
-      props: {
-        postData: {
-          title: matterResult.data.title,
-          contentHtml,
-        },
+  return {
+    props: {
+      postData: {
+        title: data.title,
+        date: data.date ? String(data.date) : null,
+        lang: isChinese(data.title) ? 'zh-CN' : 'en',
+        contentHtml: await markdownToHtml(content),
       },
-    };
-  }
+    },
+  };
+}

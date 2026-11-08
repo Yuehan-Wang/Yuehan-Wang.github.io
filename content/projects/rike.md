@@ -1,5 +1,5 @@
 ---
-title: "日课"
+title: "日课 · Daily Lessons"
 description: "My daily course on AI agents, security and data platforms, taught and graded by Claude."
 imageUrl: '/images/projects/rike.svg'
 date: "2026-11-07"
