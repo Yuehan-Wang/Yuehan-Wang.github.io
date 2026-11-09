@@ -34,6 +34,6 @@ So similar moments don't tell you where a stock is going, but they do say a litt
 
 ## To be continued
 
-That points at options. A strangle doesn't care about direction: it pays when the move is bigger than what the market priced in. The catch is that the bar is the option's implied volatility, not trailing vol or the VIX. My next test is to compare the engine's volatility forecast for SPY with the VIX, which is the market's own 30-day forecast, and see whether the gap predicts when realized volatility ends up above or below it. If it does, there might be something here.
+That points at options. A straddle or strangle doesn't care about direction: it pays when the move is bigger than what the market priced in. An at-the-money straddle is the cleanest version of that bet. The catch is that the bar is the option's implied volatility, not trailing vol or the VIX. My next test is to compare the engine's volatility forecast for SPY with the VIX, which is the market's own 30-day forecast, and see whether the gap predicts when realized volatility ends up above or below it. If it does, there might be something here.
 
 Code and results are on the `research/signal-eval` branch of [stocks_match](https://github.com/Yuehan-Wang/stocks_match/tree/research/signal-eval).
